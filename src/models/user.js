@@ -33,6 +33,15 @@ module.exports = (sequelize, DataTypes) => {
         }
       }
     },
+    password: {
+      type: DataTypes.STRING,
+      validate: {
+        len: {
+          args: [6, 25],
+          msg: 'Please enter a valid password.'
+        }
+      }
+    },
     photo: DataTypes.STRING,
     admin: DataTypes.BOOLEAN
   }, {

@@ -18,6 +18,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       email: {
+        allowNull: false,
+        type: Sequelize.STRING
+      },
+      password: {
         type: Sequelize.STRING
       },
       photo: {
