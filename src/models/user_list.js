@@ -1,8 +1,8 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const user_list = sequelize.define('user_list', {
-    userId: DataTypes.NUMBER,
-    listId: DataTypes.NUMBER
+    userId: DataTypes.INTEGER,
+    listId: DataTypes.INTEGER
   }, {});
   user_list.associate = function(models) {
   };

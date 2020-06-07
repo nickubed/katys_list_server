@@ -12,10 +12,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       listId: {
-        type: Sequelize.NUMBER
+        type: Sequelize.INTEGER
       },
       userId: {
-        type: Sequelize.NUMBER
+        type: Sequelize.INTEGER
       },
       spotifyId: {
         type: Sequelize.STRING
