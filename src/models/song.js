@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     spotifyId: DataTypes.STRING
   }, {});
   song.associate = function(models) {
-    // associations can be defined here
+    models.song.belongsTo(models.songlist)
   };
   return song;
 };
